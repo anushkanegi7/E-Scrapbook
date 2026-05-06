@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Scroll Animation</title>
+  <link rel="stylesheet" href="cabout.css" />
+</head>
+<body>
+<header class="top-banner">
+    <img src="images/all.png" alt="" class="head">
+</header>
+
+<section class="about-collage">
+
+  <!-- CENTER IMAGE -->
+  <div class="center">
+    <img src="images/a1.png" class="main active">
+    <img src="images/a2.png" class="main">
+    <img src="images/a3.png" class="main">
+  </div>
+
+  <!-- SIDE IMAGES -->
+  
+  <!--<img src="images/ab2.png" class="floating img2">
+  <img src="images/ab3.png" class="floating img3">
+ 
+  <img src="images/ab5.png" class="floating img1">
+  <img src="images/ab6.png" class="floating img2">
+  <img src="images/ab7.png" class="floating img3">-->
+ 
+  
+
+
+</section>
+
+   
+<script>
+const images = document.querySelectorAll(".main");
+let i = 0;
+
+setInterval(() => {
+  images[i].classList.remove("active");
+
+  i = (i + 1) % images.length;
+
+  images[i].classList.add("active");
+}, 1000);
+</script>
+</body>
+</html>

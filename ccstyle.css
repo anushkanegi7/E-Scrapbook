@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  background: url(images/bg.jpg);
+  font-family: 'EB Garamond', serif;
+}
+
+/* BACK BUTTON */
+.back {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.back:hover {
+  opacity: 1;
+  transform: translateX(-5px);
+}
+
+/* WRAPPER */
+.creative-wrapper {
+  padding: 100px 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.head {
+  width: 420px;
+  max-width: 80%;
+}
+
+.subtitle {
+  margin-top: 15px;
+  opacity: 0.7;
+}
+
+/* PROJECTS */
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* CARD */
+.project {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.project h2 {
+  margin-bottom: 15px;
+}
+
+/* CONTEXT TEXT */
+.context {
+  line-height: 1.7;
+  margin-bottom: 25px;
+  max-width: 650px;
+}
+
+/* IFRAME */
+iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 8px;
+  background: #eee;
+}
+
+/* REAL IMAGE SECTION */
+.real-image {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.real-image p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.real-image img {
+  width: 220px;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
